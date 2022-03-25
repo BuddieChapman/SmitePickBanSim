@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+}
+
+#search-bar {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+#god-pool {
+	width: 40vw;
+	height: 80vh;
+	margin: 0 auto;
+	overflow-y: auto;
+	line-height: 0;
+	text-align: center;
+}
+
+.locked {
+	filter:  grayscale(1);
+}
+
+#god-pool img, .pick img, #order-bans img, #chaos-bans img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	object-position: top;
+}
+
+#god-pool img:hover {
+	border: yellow 2px solid;
+}
+
+.pick {
+	margin: 5px;
+}
+
+.pick img {
+	border: black 1px solid;
+}
+
+.pick p {
+	height: 100px;
+	font-size: 80px;
+}
+
+#order-picks img {
+	float: left;
+}
+
+#chaos-picks img {
+	float: right;
+}
+
+#chaos-picks p {
+	text-align: right;
+}
+
+.picks-sb {
+	position: fixed;
+	bottom: 0;
+	width: 30vw;
+	margin-bottom: 15vh
+}
+
+#order-picks {
+	left: 0;
+}
+
+#chaos-picks {
+	right: 0;
+}
+
+#order-bans {
+	position: fixed;
+	left: 0;
+	top: 30px;
+}
+
+#chaos-bans {
+	position: fixed;
+	right: 0;
+	top: 30px;
+}
